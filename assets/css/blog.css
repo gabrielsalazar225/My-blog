@@ -20,13 +20,28 @@ header {
     width: 25px; 
 }
 
-header button{
+#mode-toggle:hoover 
+{
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: darkblue;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
+    
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+header button{
+    border-radius: 4px;
+    background-color: darkblue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
     padding: 20px;
     width: 200px;
     transition: all 0.5s;
@@ -108,4 +123,14 @@ footer ul li {
     list-style: none;
     justify-content: baseline; 
 
+}
+
+.dark {
+    background-color: #333; 
+    color: #fff; }
+
+
+.light {
+    background-color: white;
+    color: black;
 }

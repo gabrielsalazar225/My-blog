@@ -1,14 +1,32 @@
 
 *{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
-    padding: 0;
+  
+}
+
+h1 {
+    font-size: xx-large;
 }
 
 .header  {
    height: 80px;
    width: 100%;
    border-bottom: 5px solid black;   
+}
+header button{
+    border-radius: 4px;
+    background-color: darkblue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   
+    display: block;
+    align-self: center;
 }
 
 body {
@@ -18,15 +36,9 @@ body {
     color: var(white);
 }
 
-.dark-mode {
+.dark {
     background-color: #333; 
     color: #fff; 
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-
 }
 
 .box {
@@ -120,7 +132,7 @@ justify-content: space-between;
     
 }
 
-#CommentsEl {
+#contentEl {
     display: block;
     min-height: 80px;
     width: 50%;
