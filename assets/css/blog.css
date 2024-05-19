@@ -1,136 +1,131 @@
 * {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.form {
-    display: inline-block;
-    ;
+body {
+    display: block;
+    margin: 0px;
 }
-section {
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    flex-direction: column;
+
+p {
+    font-size: 20px;
+}
+
+.blogPage {
+    overflow: scroll;
+    padding-left: 15px;
 }
 
 header {
+    background-color: white ;
+    margin: 0;
+    padding: 15px;
+    position: relative;
     display: flex;
-    justify-content: flex-start; 
-    height: 20px;
-    width: 25px; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 20px double rgb(3, 50, 3);
+
 }
 
-#mode-toggle:hoover 
-{
-    border-radius: 4px;
-    background-color: darkblue;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
+
+main {
+    flex-direction: column;
+    padding-left: 20px;
+    overflow-y: scroll;
+    height: calc(100vh - 288px);
+}
+
+.switch {
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 500;
+    left: 600;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
     cursor: pointer;
-    margin: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(3, 50, 3);
+    transition: 0.4s;
 }
 
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: beige;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
-header button{
-    border-radius: 4px;
-    background-color: darkblue;
-    border: none;
-    color: #FFFFFF;
+input:checked + .slider {
+    background-color: orange;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px orange;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before{
+    border-radius: 50%;
+}
+
+h4 {
     text-align: center;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    margin-left: 1050px;
-    display: block;
-    align-self: center;
-  }
+    margin: auto;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    bottom: 0;
+    border-top: double aqua 20px;
+}
 
+.light {
+    background-color: white;
+    color: black;
+}
 
-#title1 {
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.footer {
     width: 100%;
-    height: 30px;
-
-}
-
-#content1{
-    width: 100%;
-    height: 70px;
-    border-bottom: solid 5px black;
-    font-size: smaller;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-}
-
-#title2 {
-    width: 111%;
-    height: 30px;
-   
-}
-
-#content2 {
-    width: 111%;
-    height: 70px;
-    border-bottom: solid 5px black;
-    font-size: smaller;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#title3 {
-    width: 111%;
-    height: 30px;
-   
-
-}
-
-#content3 {
-    width: 111%;
-    height: 70px;
-    border-bottom: solid 5px black;
-    font-size: smaller;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.blog{
-    width: 95%;
-    height: 500px;
-    border: groove 10px black;
-    padding: 20px;
-}
-
-footer {
-    display: flex;
-    justify-content: baseline;
-    align-items: baseline;
-    margin-bottom: 0%;
-    margin-left: 0%; 
-    
-
-}
-footer li {
-    justify-content: baseline;
-    align-items: baseline;
+    position: fixed;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    bottom: 0px;
+    font-size: 20px;
 }
 
 footer ul li {
     flex-direction:column;
     list-style: none;
-    justify-content: baseline; 
-
-}
-
-.dark {
-    background-color: #333; 
-    color: #fff; }
-
-
-.light {
-    background-color: white;
-    color: black;
 }

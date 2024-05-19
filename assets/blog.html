@@ -3,55 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Entry Page</title>
+    <title>Posts</title>
     <link rel="blog stylesheet" type="text/css" href="/assets/css/blog.css">
 </head>
 <body>
-  <main>
-    <button id="mode-toggle">Toggle Dark/Light Mode </button>
     <header>
-        <h3>Toggle</h3>
-        <a href="./index.html">Back</a>
-        
-    </header>
+    <a href="./index.html">Back</a>
+<label class="switch">
+    <input type="checkbox" id="theme-switcher">
+    <span class="slider round"></span>
+</label>
+</header>
+<main>
+    <div class="blogPage">
+        <div id="blogPost">
+        </div>
+    </div>
+</main>
 
-    <section>
-        <h1>My First Blog</h1>
-        </section>
-        <section class="blogList">
-            <label for="title">Title</label>
-            <textarea id="title1" placeholder="Posted By"></textarea>
-            
-            <label for="content">Content</label>
-            <textarea id="content1" placeholder="Posted By"></textarea>
-            
-            <section>
-            <label for="title">Title</label>
-            <textarea id="title2" placeholder=""></textarea>
-            </section>
-
-            <section><label for="content">Content</label>
-            <textarea id="content2" placeholder="Posted By"></textarea></section>
-
-            <section>
-            <label for="title">Title</label>
-            <textarea id="title3" placeholder=""></textarea>
-            </section>
-
-            <section><label for="content">Content</label>
-            <textarea id="content3" placeholder="Posted By"></textarea></section>
-           
-    </section>
     <footer>
         <ul>
             <li>Portfolio:
-                <a href="https://github.com/dashboard">My Portfolio</a>
+                <a href="https://github.com/gabrielsalazar225/My-blog">My Portfolio</a>
             </li>
-            <li>Blog: Gabriel Salazar</li>
-            <li>Posted by: Gabriel Salazar</li>
+            <li>Blog: Gabriel Salazar Blog</li>
         </ul>
     </footer>
-  </main>  
-  <script src="./js/blog.js" > </script>
+
+  <script src="/assets/js/blog.js" ></script>
 </body>
 </html>

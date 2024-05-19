@@ -1,0 +1,59 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    display: inline-block;
+    width: 50%;
+    min-height: auto;
+    background: white;
+    padding-top: 20px;
+    margin: 80px; 
+    padding-right: 90px;
+}
+
+.card::after {
+    content: " ";
+    display: block;
+    clear: both;  
+  }
+
+#titlebox {
+    display: block;
+    min-height: 0px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: azure;
+    color: black;
+}
+
+#contentbox {
+    display: block;
+    min-height: 0px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: azure;
+    color: black;
+}
+
+#userbox {
+    display: block;
+    min-height: 0px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: azure;
+    color: black;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+.dark label {
+    color: black;
+}

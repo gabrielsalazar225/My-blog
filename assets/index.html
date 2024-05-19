@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu Blog</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+    <link rel="form stylesheet" type="text/css" href="/assets/css/form.css">
+    
+</head>
+<body class="container light">
+<header>
+<h1></h1>
+<label class="switch">
+    <input type="checkbox" id="theme-switcher">
+    <span class="slider round"></span>
+</label>
+</header>
+<main>
+<figure class="img" >
+   <img  id="insideImg" src="/assets/eclipse.webp" alt="An eclipse img shoul be here">
+</figure>
+<section class="card">
+<h1>This is your moment!!!</h1>
+<form id="myForm" name="myForm">
+            <label for="userbox">Username</label>
+            <textarea id="userbox"></textarea>
 
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>My-blog</title>
-     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
-     <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
-     <link rel="form-stylesheet" type="text/css" href="/assets/css/form.css">
-   </head>
-   <body id="container-light">
-        <header class="header">
-           <label class="switchDarkLigth">
-           <button id="theme-switcher">Dark/Ligth mode</button>
-           <span class="slider round"></span>
-      </label>
-        </header>
-        <div class= "box" id="squareLeft">
-          <h1 id="label"> My first Blog </h1>
-          <img src="data:image/jpeg;base64,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" width="500px" alt="Imagen de tecnologia" id="img">
-        </div>
-          <div class= "box" id="sqareRigth">
-            <h1 id="blogTitle" > Will the tecnology be over the human been knowledege? </h1>
-                <form class="Formlist">
+            <label for="titlebox">Title</label>
+            <textarea id="titlebox"></textarea>
 
-                   <label for="Username" id="usernamela"> Username</label>
-                   <input id="usernameEl" name="username" placeholder="username" data-pikachu="username"></input>
-                
-                    <label for="Title" id="titleLa">Title</label>
-                    <input id="titleEl" name="Blog-Title" placeholder="Title" data-pikachu="title"></input>
-                
-                    <label for="Comments" id="CommentsLa">Comments</label>
-                    <input id="contentEl" name="Blog-Comments" placeholder="comments" data-pikachu="comments"></input>
-                 </form>
-                 <button type="button" id="submit" value="submit">Submit</button>
-                </div>
-        <script src="/assets/js/styles.js"></script> 
-        <script src="/assets/js/form.js"></script>
-   </body>
+            <label for="contentbox">Content</label>
+            <textarea id="contentbox"></textarea>
+
+            <input id="submitbutton" type="submit"value="Submit">
+</form>
+</section>
+</main>
+
+<script src="/assets/js/logic.js" ></script>
+<script src="/assets/js/form.js"></script>
+</body>
 </html>
-

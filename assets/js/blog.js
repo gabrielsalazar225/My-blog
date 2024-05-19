@@ -2,7 +2,6 @@ const themeswitcher = document.querySelector('#theme-switcher')
 let container = document.querySelector('.container');
 let mode = 'light'
 
-
 function displayBlogPosts () {
     const blogPost = document.getElementById('blogPost');
 
