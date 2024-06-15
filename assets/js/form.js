@@ -1,7 +1,7 @@
-const userName = document.getElementById('userbox');
-const title = document.getElementById('titlebox');
-const content = document.getElementById('contentbox');
-const submit = document.getElementById('submitbutton');
+const userName = document.getElementById('userBox');
+const title = document.getElementById('titleBox');
+const content = document.getElementById('contentBox');
+const submit = document.getElementById('submitButton');
 
 
 function saveBlog() {
@@ -35,9 +35,9 @@ function saveBlog() {
     });
 
 function validateForm() {
-    const userName = document.getElementById('userbox').value.trim();
-    const title = document.getElementById('titlebox').value.trim();
-    const content = document.getElementById('contentbox').value.trim(); 
+    const userName = document.getElementById('userBox').value.trim();
+    const title = document.getElementById('titleBox').value.trim();
+    const content = document.getElementById('contentBox').value.trim(); 
     if( userName === '') {
         alert('Please Enter Your username');
         return false;

@@ -1,5 +1,5 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 body {
@@ -14,6 +14,15 @@ p {
 .blogPage {
     overflow: scroll;
     padding-left: 15px;
+    border: 10px
+
+}
+
+#blogPost {
+    border: 5px solid rgb(3, 50, 3);
+    margin-top: 10px;
+    padding: 10px;
+    
 }
 
 header {

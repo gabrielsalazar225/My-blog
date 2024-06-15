@@ -32,7 +32,10 @@ function displayBlogPosts () {
         mode = 'dark';
     container.setAttribute('class', 'light');    
     } else {
-        mode = 'light';
+        mode = 'ligh';
     container.setAttribute('class', 'dark');
     } 
     });
+
+
+    

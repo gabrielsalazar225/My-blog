@@ -1,5 +1,5 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .card {
@@ -18,7 +18,7 @@
     clear: both;  
   }
 
-#titlebox {
+#titleBox {
     display: block;
     min-height: 0px;
     margin-top: 10px;
@@ -27,7 +27,7 @@
     color: black;
 }
 
-#contentbox {
+#contentBox {
     display: block;
     min-height: 0px;
     margin-top: 10px;
@@ -36,7 +36,7 @@
     color: black;
 }
 
-#userbox {
+#userBox {
     display: block;
     min-height: 0px;
     margin-top: 10px;
@@ -56,4 +56,10 @@
 }
 .dark label {
     color: black;
+}
+
+.titleBox {
+    display: block;
+    text-align:center;
+    align-content:center;
 }
