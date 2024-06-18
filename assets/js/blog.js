@@ -13,9 +13,17 @@ function displayBlogPosts () {
         const userName = document.createElement('h3')
         const content = document.createElement('p')
 
+        child.style.border=
+        '3px solid rgb(3, 50, 3)'
+        child.style.padding=
+        '10px'
+        child.style.marginTop=
+        '10px'
+
+
         title.innerHTML = element.title
-        title.innerHTML = element.userName
-        title.innerHTML = element.content
+        userName.innerHTML = element.userName
+        content.innerHTML = element.content
 
         child.appendChild(title)
         child.appendChild(userName)

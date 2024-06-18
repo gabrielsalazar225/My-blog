@@ -1,5 +1,5 @@
 * {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -18,12 +18,7 @@ p {
 
 }
 
-#blogPost {
-    border: 5px solid rgb(3, 50, 3);
-    margin-top: 10px;
-    padding: 10px;
-    
-}
+
 
 header {
     background-color: white ;
@@ -127,14 +122,8 @@ h4 {
 
 .footer {
     width: 100%;
-    position: fixed;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    bottom: 0px;
+    padding-left: 15px;
     font-size: 20px;
+    margin-top: 5%;
 }
 
-footer ul li {
-    flex-direction:column;
-    list-style: none;
-}
